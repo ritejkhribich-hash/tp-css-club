@@ -1,0 +1,200 @@
+:root {
+    --couleur-principale: #1f4e79;
+    --couleur-secondaire: #2e75b6;
+    --couleur-accent: #f59e0b;
+    --couleur-fond: #f5f7fa;
+    --couleur-texte: #1e293b;
+    --rayon: 10px;
+    --espace: 1rem;
+  }
+  
+  /* ===== PARTIE 1 : Selecteurs et proprietes ===== */
+  
+  /* a) Selecteur de type + heritage */
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    line-height: 1.6;
+    /* TODO : color et background-color */
+    color: var(--couleur-texte);
+    background-color: var(--couleur-fond);
+  }
+  
+  /* b) Header - bech ywalli azre9 */
+  header {
+    background-color: var(--couleur-principale);
+    color: #fff;
+    padding: var(--espace);
+  }
+  
+  /* c) Descendant : les liens situes dans le menu */
+  .menu a {
+    /* TODO : color #fff et suppression du soulignement */
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* d) Enfant direct */
+  .menu > li {
+    /* TODO : supprimer les puces (list-style) */
+    list-style: none;
+  }
+  
+  /* e) Classe */
+  .important {
+    /* TODO : font-weight 700 et color #9a3412 */
+    font-weight: 700;
+    color: #9a3412;
+  }
+  
+  /* f) Frere adjacent : le <p> qui suit un <h3> dans une carte */
+  .carte h3 + p {
+    /* TODO : color #475569 */
+    color: #475569;
+  }
+  
+  /* g) Selecteurs d'attributs + pseudo-element ::after */
+  a[href^="https"]::after {
+    content: " ↗";
+  }
+  a[href$=".pdf"]::after {
+    /* TODO : content " (PDF)" */
+    content: " (PDF)";
+  }
+  
+  /* h) Pseudo-classes */
+  .menu a:hover,
+  .menu a:focus-visible {
+    /* TODO : background-color rgba(255,255,255, 0.2) */
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  .planning tbody tr:nth-child(even) {
+    /* TODO : background-color #eaf1f8 */
+    background-color: #eaf1f8;
+  }
+  input:focus, select:focus, textarea:focus {
+    /* TODO : outline 3px solid var(--couleur-accent) */
+    outline: 3px solid var(--couleur-accent);
+  }
+  
+  /* i) Pseudo-element ::before */
+  .important::before {
+    /* TODO : content "★" et color var(--couleur-accent) */
+    content: "★ ";
+    color: var(--couleur-accent);
+  }
+  p { color: red; }
+.important { color: blue; }
+#apropos p { color: green; }
+/* Reinitialisation */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* En-tete et menu */
+  .site-header {
+    padding: 1rem 1.5rem;
+  }
+  .menu {
+    margin: 0;
+    padding: 0;
+  }
+  .menu a {
+    padding: 0.5rem 1rem;
+    border-radius: var(--rayon);
+  }
+  
+  /* Bandeau d'accueil et bouton */
+  .hero {
+    padding: 3rem var(--espace);
+  }
+  .hero h1 {
+    margin: 0 0 0.5rem 0;
+  }
+  .btn {
+    padding: 0.7rem 1.5rem;
+    border: 0;
+    border-radius: var(--rayon);
+  }
+  
+  /* Zones de contenu */
+  .contenu {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem var(--espace);
+  }
+  .contenu h2 {
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid var(--couleur-accent);
+  }
+  .deux-colonnes aside {
+    padding: var(--espace);
+    border-radius: var(--rayon);
+  }
+  
+  /* Cartes */
+  .carte {
+    padding: var(--espace);
+    border: 1px solid #d8e0ea;
+    border-top: 4px solid var(--couleur-accent);
+    border-radius: var(--rayon);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  }
+  .carte h3 {
+    margin-top: 0;
+  }
+  
+  /* Tableau */
+  .table-conteneur {
+    overflow-x: auto;
+  }
+  .planning {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .planning th,
+  .planning td {
+    padding: 0.6rem 0.8rem;
+    text-align: left;
+    border-bottom: 1px solid #d8e0ea;
+  }
+  
+  /* Galerie */
+  .galerie figure {
+    margin: 0;
+  }
+  .galerie img {
+    border-radius: var(--rayon);
+  }
+  
+  /* Formulaire */
+  .formulaire {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    border: 1px solid #d8e0ea;
+    border-radius: var(--rayon);
+  }
+  .champ {
+    margin-bottom: 1rem;
+  }
+  .champ input,
+  .champ select,
+  .champ textarea {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #94a3b8;
+    border-radius: 6px;
+  }
+  .site-footer {
+    padding: 1.5rem var(--espace);
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }

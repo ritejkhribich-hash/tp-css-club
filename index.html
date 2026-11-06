@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club - Accueil</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Mon Club</div>
+      <nav>
+        <ul>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#activites">Activités</a></li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li><a href="#inscription">Inscription</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main>
+      <section class="hero">
+        <h1>Bienvenue au Club</h1>
+        <p class="slogan">Apprendre, partager et créer ensemble</p>
+        <a href="#inscription" class="btn">Rejoindre le club</a>
+      </section>
+
+      <section id="apropos">
+        <h2>À propos</h2>
+        <div class="deux-colonnes">
+          <p>
+            Notre club réunit des étudiants passionnés par le web et la
+            création.
+          </p>
+          <article>
+            <p>
+              <strong>Notre mission :</strong> apprendre en pratiquant des
+              projets réels.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="activites">
+        <h2>Nos activités</h2>
+        <article class="carte">
+          <h3>Atelier HTML</h3>
+          <p>Découvrir la structure d'une page.</p>
+        </article>
+        <article class="carte">
+          <h3>Atelier CSS</h3>
+          <p>Mettre en forme et en couleur.</p>
+        </article>
+        <article class="carte">
+          <h3>Projet</h3>
+          <p>Réaliser un site complet.</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Planning</h2>
+        <table class="planning">
+          <tr>
+            <th>Jour</th>
+            <th>Activité</th>
+            <th>Heure</th>
+          </tr>
+          <tr>
+            <td>Lundi</td>
+            <td>HTML</td>
+            <td>14h</td>
+          </tr>
+          <tr>
+            <td>Mercredi</td>
+            <td>CSS</td>
+            <td>14h</td>
+          </tr>
+          <tr>
+            <td>Vendredi</td>
+            <td>Projet</td>
+            <td>15h</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="galerie">
+        <h2>Galerie</h2>
+        <figure>
+          <img src="https://picsum.photos/200" alt="Photo 1" />
+          <figcaption>Photo 1</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/201" alt="Photo 2" />
+          <figcaption>Photo 2</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/202" alt="Photo 3" />
+          <figcaption>Photo 3</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/203" alt="Photo 4" />
+          <figcaption>Photo 4</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/204" alt="Photo 5" />
+          <figcaption>Photo 5</figcaption>
+        </figure>
+        <figure>
+          <img src="https://picsum.photos/205" alt="Photo 6" />
+          <figcaption>Photo 6</figcaption>
+        </figure>
+      </section>
+
+      <section id="inscription">
+        <h2>Inscription</h2>
+        <form>
+          <label>Nom <input type="text" required /></label>
+          <label>Email <input type="email" required /></label>
+          <label
+            >Activité
+            <select>
+              <option>HTML</option>
+              <option>CSS</option>
+              <option>Projet</option>
+            </select>
+          </label>
+          <label>Message <textarea></textarea></label>
+          <button type="submit">S'inscrire</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2026 Mon Club - Tous droits réservés</p>
+      <a href="mailto:contact@club.com">contact@club.com</a>
+    </footer>
+  </body>
+</html>
