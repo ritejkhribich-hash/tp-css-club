@@ -18,6 +18,13 @@
     color: var(--couleur-texte);
     background-color: var(--couleur-fond);
   }
+  h1, h2, h3 {
+    color: var(--couleur-principale);
+    line-height: 1.25;
+  }
+  a {
+    color: var(--couleur-principale);
+  }
   
   /* b) Header - bech ywalli azre9 */
   header {
@@ -82,9 +89,8 @@
     content: "★ ";
     color: var(--couleur-accent);
   }
-  p { color: red; }
-.important { color: blue; }
-#apropos p { color: green; }
+ 
+
 /* Reinitialisation */
 *, *::before, *::after {
     box-sizing: border-box;
@@ -195,6 +201,4 @@
   .site-footer {
     padding: 1.5rem var(--espace);
   }
-  *, *::before, *::after {
-    box-sizing: border-box;
-  }
+  
