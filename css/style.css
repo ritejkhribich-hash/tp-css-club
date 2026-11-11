@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 :root {
     --couleur-principale: #1f4e79;
     --couleur-secondaire: #2e75b6;
@@ -201,4 +202,54 @@
   .site-footer {
     padding: 1.5rem var(--espace);
   }
-  
+  /* ===== PARTIE 3 : Couleurs, polices, arriere-plans ===== */
+
+h1, h2, h3, .logo {
+  font-family: "Poppins", "Segoe UI", sans-serif;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+.contenu h2 { font-size: 1.6rem; }
+.slogan { font-size: 1.2rem; }
+.galerie figcaption {
+  font-size: 0.9rem;
+  color: #475569;
+  text-align: center;
+}
+.site-header { background-color: var(--couleur-principale); }
+.hero {
+  color: #fff;
+  text-align: center;
+  background: url("https://picsum.photos/id/1015/1600/700") center / cover no-repeat;
+}
+.hero h1 {
+  font-size: 2.2rem;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.btn {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--couleur-texte);
+  background-color: var(--couleur-accent);
+  cursor: pointer;
+}
+.btn:hover { background-color: hsl(38, 92%, 62%); }
+.deux-colonnes aside { background-color: #e8f0fa; }
+.carte { background-color: #fff; }
+.planning th { color: #fff; background-color: var(--couleur-principale); }
+.formulaire { background-color: #fff; }
+.champ label { font-weight: 600; }
+.site-footer {
+  color: #fff;
+  text-align: center;
+  background-color: #0f2a43;
+}
+.site-footer a { color: var(--couleur-accent); }
